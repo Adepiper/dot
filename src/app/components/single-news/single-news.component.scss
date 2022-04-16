@@ -32,6 +32,9 @@
 
   .authorInfo {
     margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     span {
       display: block;
     }
@@ -45,6 +48,22 @@
       font-weight: 400;
       font-size: 15px;
       color: rgba(0, 0, 0, 0.708);
+    }
+    .susbcribeTo {
+      border: none;
+      background-color: transparent;
+    }
+
+    .heart {
+      font-size: 26px;
+      cursor: pointer;
+    }
+    .subscribed {
+      color: red;
+    }
+    .unsubscribed {
+      color: white;
+      border: 1px solid blue;
     }
   }
 }

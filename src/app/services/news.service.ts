@@ -2,6 +2,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { newsId } from '../helper/generateId';
 import { News, NewsResponse } from '../models/news.model';
 
 const api = environment.api;
@@ -12,7 +13,22 @@ const apiKey = environment.apiKey;
 })
 export class NewsService {
   news$ = new BehaviorSubject<News[]>([]);
+  susbcribedNews$ = new BehaviorSubject<News[]>([]);
   loading = new BehaviorSubject(false);
+
+  subscribeToNews(news: News) {
+    const subscribedNews = [...this.susbcribedNews$.value];
+    const findNews = subscribedNews.find((value) => value.id === news?.id);
+    if (findNews) {
+      const splicedNews = subscribedNews.filter(
+        (value) => value.id !== findNews.id
+      );
+      this.susbcribedNews$.next(splicedNews);
+    } else {
+      subscribedNews.push(news);
+      this.susbcribedNews$.next(subscribedNews);
+    }
+  }
 
   getNews(
     apiEndPoint: string,
@@ -46,6 +62,7 @@ export class NewsService {
         const articles = data.articles.map((value) => ({
           ...value,
           subscribed: false,
+          id: newsId(),
         }));
 
         this.news$.next(articles);

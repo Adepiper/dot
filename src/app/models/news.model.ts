@@ -14,6 +14,7 @@ export class News {
   publishedAt = '';
   content = '';
   subscribed = false;
+  id = '';
 }
 
 export class NewsSource {

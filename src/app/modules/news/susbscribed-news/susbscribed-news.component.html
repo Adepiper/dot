@@ -1,1 +1,11 @@
-<p>susbscribed-news works!</p>
+<div class="allNews">
+  <h1>Subscribed Articles</h1>
+  <app-empty-state
+    *ngIf="subscribedNews.length === 0"
+    name="susbcribed articles"
+  ></app-empty-state>
+  <app-single-news
+    *ngIf="subscribedNews.length > 0"
+    [news]="subscribedNews"
+  ></app-single-news>
+</div>

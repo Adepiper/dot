@@ -1,4 +1,5 @@
 <div class="allNews">
   <h1>Featured Articles</h1>
-  <app-single-news [news]="news"></app-single-news>
+  <app-empty-state *ngIf="news.length === 0" name="articles"></app-empty-state>
+  <app-single-news *ngIf="news.length > 0" [news]="news"></app-single-news>
 </div>

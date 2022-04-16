@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="255.631" height="214.093" viewBox="0 0 255.631 214.093">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.842" y1="0.973" x2="0.067" y2="-0.24" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#eef1fb"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.067" y1="-0.24" x2="0.842" y2="0.973" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f4f6fb"/>
+      <stop offset="1" stop-color="#e6eaf6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.555" y1="0.155" x2="0.053" y2="0.763" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#feffff"/>
+      <stop offset="1" stop-color="#e9ecf6"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <ellipse id="Mask" cx="39.743" cy="44.19" rx="39.743" ry="44.19" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-5" x1="0.103" y1="-0.225" x2="1.263" y2="1.501" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8faff"/>
+      <stop offset="1" stop-color="#cad2e9"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <ellipse id="Mask-2" data-name="Mask" cx="39.743" cy="44.19" rx="39.743" ry="44.19" fill="none" stroke="#707070" stroke-width="3.162"/>
+    </clipPath>
+  </defs>
+  <g id="Group_161960" data-name="Group 161960" transform="translate(0 2.75)">
+    <path id="Path_3" data-name="Path 3" d="M37.78,85.72S8.764,41.274,46.927,13.261s72.856,5.892,72.856,5.892,53.3-21.124,78.848,15-4.415,84.413-4.415,84.413,41.632,21.886,38.793,58.532-118.272,13.231-118.272,13.231S22.326,222.624,5.295,170.486,37.78,85.72,37.78,85.72Z" transform="translate(12.167 11.124)" fill="url(#linear-gradient-2)"/>
+    <g id="Group_6" data-name="Group 6" transform="translate(71.912 83.552)">
+      <path id="Combined_Shape" data-name="Combined Shape" d="M69.523,69.1v.032L69.4,69.1a43.822,43.822,0,0,1-22.057-6.827L18.54,53.351v-.533C8.071,51.488,0,43.049,0,32.837c0-.1,0-.191,0-.286s0-.193,0-.29C0,21.223,9.153,12.2,20.7,11.558L52.523,4.024A44.631,44.631,0,0,1,69.361.038L69.523,0V.032Q70.387,0,71.261,0c22.078,0,39.976,15.475,39.976,34.566s-17.9,34.566-39.976,34.566Q70.388,69.132,69.523,69.1Z" transform="translate(1.004 25.088)" fill="#dce1f3" opacity="0.72"/>
+      <path id="Combined_Shape-2" data-name="Combined Shape" d="M62.219,63.194v.028l-.1-.031a38.331,38.331,0,0,1-19.857-6.346L17.06,48.79v-.723A18.76,18.76,0,0,1,0,29.6c0-.083,0-.166,0-.249s0-.168,0-.252A19.323,19.323,0,0,1,19.569,10.035q.7,0,1.4.048L46.882,3.749A38.933,38.933,0,0,1,62.084.033L62.219,0V.028Q62.967,0,63.724,0C83.4,0,99.349,14.153,99.349,31.611S83.4,63.222,63.724,63.222Q62.968,63.222,62.219,63.194Z" transform="translate(7.025 28.099)" fill="#d4daef" opacity="0.72"/>
+      <g id="Group_5" data-name="Group 5">
+        <g id="Group_4" data-name="Group 4">
+          <path id="Combined_Shape-3" data-name="Combined Shape" d="M19.431,68.745C8.534,67.51,0,56.175,0,42.374c0-13.506,8.172-24.65,18.733-26.279v-.6L69.578,0V88.719Z" fill="url(#linear-gradient-3)"/>
+        </g>
+        <path id="Path_5" data-name="Path 5" d="M39.267,79.857,35.8,84.5S18.641,75.968,11.458,68.335C-2.24,53.777-3.976,28.054,7.982,14.182,21.887-1.949,41.931-2.525,55.489,3.593" transform="translate(12.875 0.797)" fill="none" stroke="#707070" stroke-width="3.162"/>
+        <g id="Oval_Copy" data-name="Oval Copy" transform="translate(31.955 0.169)">
+          <g id="Oval_Copy-2" data-name="Oval Copy" transform="translate(0)">
+            <ellipse id="Mask-3" data-name="Mask" cx="39.743" cy="44.19" rx="39.743" ry="44.19" fill="url(#linear-gradient)"/>
+            <g id="Oval_Copy-3" data-name="Oval Copy" clip-path="url(#clip-path)">
+              <ellipse id="Oval_Copy-4" data-name="Oval Copy" cx="22.078" cy="27.145" rx="22.078" ry="27.145" transform="translate(-31.955 14.397)" opacity="0.9" fill="url(#linear-gradient-5)"/>
+            </g>
+            <ellipse id="Mask-4" data-name="Mask" cx="39.743" cy="44.19" rx="39.743" ry="44.19" fill="none" stroke="#707070" stroke-width="3.162"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <circle id="Oval" cx="13.046" cy="13.046" r="13.046" transform="translate(180.366 0)" fill="#e6eaf6" stroke="#e6eaf6" stroke-width="5.5"/>
+    <circle id="Oval_Copy_2" data-name="Oval Copy 2" cx="7.025" cy="7.025" r="7.025" transform="translate(189.036 33.116)" fill="#e6eaf6" stroke="#e6eaf6" stroke-width="5.5"/>
+    <circle id="Oval_Copy_3" data-name="Oval Copy 3" cx="5.018" cy="5.018" r="5.018" transform="translate(31.109 70.139)" fill="#e6eaf6" stroke="#e6eaf6" stroke-width="5.5"/>
+    <circle id="Oval_Copy_4" data-name="Oval Copy 4" cx="5.018" cy="5.018" r="5.018" transform="translate(245.596 148.938)" fill="#e6eaf6"/>
+    <circle id="Oval_Copy_5" data-name="Oval Copy 5" cx="5.018" cy="5.018" r="5.018" transform="translate(0 189.788)" fill="#e6eaf6"/>
+  </g>
+</svg>

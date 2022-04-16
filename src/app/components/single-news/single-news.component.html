@@ -11,11 +11,20 @@
         </p>
 
         <div class="authorInfo">
-          <span class="authorName">{{ item.source.name }}</span>
-          <span class="articleDate">
-            <i class="bi bi-calendar"></i>
-            {{ item.publishedAt | date: "mediumDate" }}</span
-          >
+          <div>
+            <span class="authorName">{{ item.source.name }}</span>
+            <span class="articleDate">
+              <i class="bi bi-calendar"></i>
+              {{ item.publishedAt | date: "mediumDate" }}</span
+            >
+          </div>
+          <button class="susbcribeTo" (click)="toggleSubscribe(item)">
+            <i *ngIf="!isSusbcribed(item.id)" class="bi bi-heart heart"></i>
+            <i
+              *ngIf="isSusbcribed(item.id)"
+              class="bi bi-heart-fill heart subscribed"
+            ></i>
+          </button>
         </div>
       </div>
     </div>
