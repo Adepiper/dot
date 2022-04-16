@@ -1,0 +1,50 @@
+.card {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.236);
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 600px;
+
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  .tag {
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(4, 145, 253);
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+  }
+
+  h4 {
+    margin: 20px 0;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 500;
+    height: 80px;
+  }
+
+  .description {
+    color: rgba(0, 0, 0, 0.474);
+    height: 150px;
+  }
+
+  .authorInfo {
+    margin: 10px 0;
+    span {
+      display: block;
+    }
+
+    span.authorName {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    span.articleDate {
+      font-weight: 400;
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.708);
+    }
+  }
+}

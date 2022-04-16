@@ -1,9 +1,61 @@
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { environment } from 'src/environments/environment';
+import { News, NewsResponse } from '../models/news.model';
+
+const api = environment.api;
+const apiKey = environment.apiKey;
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class NewsService {
+  news$ = new BehaviorSubject<News[]>([]);
+  loading = new BehaviorSubject(false);
 
-  constructor() { }
+  getNews(
+    apiEndPoint: string,
+    page: number,
+    pageSize: number,
+    search?: string,
+    country?: string,
+    category?: string
+  ) {
+    let params = new HttpParams();
+
+    params = params.set('page', `${page}`);
+    params = params.set('pageSize', `${pageSize}`);
+    params = params.set('apiKey', `${apiKey}`);
+
+    if (country) {
+      params = params.set('country', country);
+    }
+    if (category) {
+      params = params.set('category', category);
+    }
+    if (search) {
+      params = params.set('q', search);
+    }
+
+    this.loading.next(true);
+
+    this.http.get<NewsResponse>(`${api}/${apiEndPoint}`, { params }).subscribe(
+      (data) => {
+        this.loading.next(false);
+        const articles = data.articles.map((value) => ({
+          ...value,
+          subscribed: false,
+        }));
+
+        this.news$.next(articles);
+      },
+      (err: any) => {
+        this.loading.next(false);
+        console.log(err);
+      }
+    );
+  }
+
+  constructor(private http: HttpClient) {}
 }

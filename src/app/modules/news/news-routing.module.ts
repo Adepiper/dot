@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ComponentsModule } from 'src/app/components/components.module';
 import { AllNewsComponent } from './all-news/all-news.component';
 import { NewsComponent } from './news.component';
 import { SusbscribedNewsComponent } from './susbscribed-news/susbscribed-news.component';
