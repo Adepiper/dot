@@ -4,6 +4,7 @@ import { BehaviorSubject } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { newsId } from '../helper/generateId';
 import { News, NewsResponse } from '../models/news.model';
+import { ReportingService } from './reporting.service';
 
 const api = environment.api;
 const apiKey = environment.apiKey;
@@ -52,7 +53,7 @@ export class NewsService {
       params = params.set('category', category);
     }
     if (search) {
-      params = params.set('q', search);
+      params = params.set('a', search);
     }
 
     this.loading.next(true);
@@ -72,10 +73,13 @@ export class NewsService {
       },
       (err: any) => {
         this.loading.next(false);
-        console.log(err);
+        this.reportingService.apiErrorService(err);
       }
     );
   }
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private reportingService: ReportingService
+  ) {}
 }
