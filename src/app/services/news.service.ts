@@ -53,7 +53,7 @@ export class NewsService {
       params = params.set('category', category);
     }
     if (search) {
-      params = params.set('a', search);
+      params = params.set('q', search);
     }
 
     this.loading.next(true);
