@@ -1,6 +1,9 @@
 <div class="row">
-  <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let item of news">
-    <div class="card my-4">
+  <div
+    class="col-lg-4 col-md-6 col-sm-12"
+    *ngFor="let item of news; let i = index"
+  >
+    <div class="card my-4" id="target-{{ i + 1 }}">
       <img [src]="item.urlToImage" class="card-img-top" alt="..." />
       <div class="card-body">
         <p class="tag">{{ item.source.name }}</p>

@@ -15,6 +15,7 @@ export class NewsService {
   news$ = new BehaviorSubject<News[]>([]);
   susbcribedNews$ = new BehaviorSubject<News[]>([]);
   loading = new BehaviorSubject(false);
+  page = 1;
 
   subscribeToNews(news: News) {
     const subscribedNews = [...this.susbcribedNews$.value];
@@ -40,7 +41,7 @@ export class NewsService {
   ) {
     let params = new HttpParams();
 
-    params = params.set('page', `${page}`);
+    params = params.set('page', `${this.page}`);
     params = params.set('pageSize', `${pageSize}`);
     params = params.set('apiKey', `${apiKey}`);
 
@@ -64,8 +65,10 @@ export class NewsService {
           subscribed: false,
           id: newsId(),
         }));
+        const news = [...this.news$.value, ...articles];
 
-        this.news$.next(articles);
+        this.news$.next(news);
+        this.page++;
       },
       (err: any) => {
         this.loading.next(false);

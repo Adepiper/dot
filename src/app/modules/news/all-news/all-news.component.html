@@ -2,4 +2,5 @@
   <h1>Featured Articles</h1>
   <app-empty-state *ngIf="news.length === 0" name="articles"></app-empty-state>
   <app-single-news *ngIf="news.length > 0" [news]="news"></app-single-news>
+  <app-loader *ngIf="loading"></app-loader>
 </div>
