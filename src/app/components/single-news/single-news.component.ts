@@ -39,7 +39,6 @@ export class SingleNewsComponent implements OnInit, OnDestroy {
   }
 
   getNews() {
-    console.log('okay');
     this.newsService.getNews('everything', 1, 12, 'bitcoin');
   }
 
