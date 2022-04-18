@@ -43,12 +43,7 @@ export class AllNewsComponent implements OnInit, OnDestroy {
     this.subscribetoNewsService();
 
     this.news.length === 0 &&
-      this.newsService.getNews(
-        'everything',
-        this.page,
-        this.pageSize,
-        'bitcoin'
-      );
+      this.newsService.getNews('everything', this.pageSize, 'bitcoin');
   }
 
   ngOnDestroy(): void {

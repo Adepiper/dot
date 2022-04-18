@@ -33,7 +33,7 @@ export class InfiniteScrollingService {
   susbcribeToInfiniteScroll(callback: any, subscription: Subscription) {
     subscription = this.getObservable().subscribe((status) => {
       if (status) {
-        this.newsService.getNews('everything', 1, 12, 'bitcoin');
+        this.newsService.getNews('everything', 12, 'bitcoin');
       }
     });
   }
@@ -45,7 +45,7 @@ export class InfiniteScrollingService {
         clearInterval(clearTimer);
         this.setObserver().observe(target);
       }
-    }, 5000);
+    }, 2000);
   }
 
   setObserver() {

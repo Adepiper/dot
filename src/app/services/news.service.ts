@@ -34,7 +34,6 @@ export class NewsService {
 
   getNews(
     apiEndPoint: string,
-    page: number,
     pageSize: number,
     search?: string,
     country?: string,

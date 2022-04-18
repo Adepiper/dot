@@ -39,7 +39,7 @@ export class SingleNewsComponent implements OnInit, OnDestroy {
   }
 
   getNews() {
-    this.newsService.getNews('everything', 1, 12, 'bitcoin');
+    this.newsService.getNews('everything', 12, 'bitcoin');
   }
 
   ngOnInit(): void {
